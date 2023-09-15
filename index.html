@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 100vh;
+            background: url('back4.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo{
+            font-size: 3em;
+            font-family: Freestyle Script;
+            letter-spacing: 2px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 25px;
+            font-family: Baskerville Old Face;
+            position: relative;
+
+        }
+        .menu a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(92, 205, 160);
+            transition: 0.4s linear ;
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }
+
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: Baskerville Old Face;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+            font-family: Pristina;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Jet Set Go !!
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Offers</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+
+        <section class="h-txt">
+            <span>Enjoy &</span>
+            <h1>Explore Japan</h1>
+
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+    </header>   
+</body>
+</html>
